@@ -48,7 +48,7 @@ void loop() {
     Serial.println(txt1);
 
       String number = txt1.substring(9,22);
- if(number == "+989900207639")
+ if(number == "secound number")
  {     
         if(txt1.indexOf("ch1")!= -1)
     {
