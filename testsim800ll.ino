@@ -154,7 +154,6 @@ void loop() {
     if(Serial.available())
   { 
     txt2 = Serial.readString();
-    //gsm.println("AT+CMGS=\"09137392795\"");
     gsm.println("AT+CMGS=\"YOUR NUMBER\"");
     delay(200);
     gsm.println(txt2);
