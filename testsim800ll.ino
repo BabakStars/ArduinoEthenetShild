@@ -4,7 +4,7 @@ SoftwareSerial gsm (10,11);
 //Sim800l Sim800l;
 String txt1 = "";
 String txt2 = "";
-String num = "09137392795";
+String num = "YOUR NUMBER";
 String txtSmsR;
 String numberSms;
 bool ch1 = false;
