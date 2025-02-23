@@ -57,7 +57,7 @@ void loop() {
           {
             digitalWrite(2,0);
             ch1 = true;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch1on");
                 delay(200);
@@ -67,7 +67,7 @@ void loop() {
           {
             digitalWrite(2,1);
             ch1 = false;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch1off");
                 delay(200);
@@ -80,7 +80,7 @@ void loop() {
           {
             digitalWrite(3,0);
             ch2 = true;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch2on");
                 delay(200);
@@ -90,7 +90,7 @@ void loop() {
           {
             digitalWrite(3,1);
             ch2 = false;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch2off");
                 delay(200);
@@ -104,7 +104,7 @@ void loop() {
           {
             digitalWrite(4,0);
             ch3 = true;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch3on");
                 delay(200);
@@ -114,7 +114,7 @@ void loop() {
           {
             digitalWrite(4,1);
             ch3 = false;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch3off");
                 delay(200);
@@ -128,7 +128,7 @@ void loop() {
           {
             digitalWrite(5,0);
             ch4 = true;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch4on");
                 delay(200);
@@ -138,7 +138,7 @@ void loop() {
           {
             digitalWrite(5,1);
             ch4 = false;
-                gsm.println("AT+CMGS=\"09137392795\"");
+                gsm.println("AT+CMGS=\"YOUR NUMBER\"");
                 delay(200);
                 gsm.println("ch4off");
                 delay(200);
@@ -155,7 +155,7 @@ void loop() {
   { 
     txt2 = Serial.readString();
     //gsm.println("AT+CMGS=\"09137392795\"");
-    gsm.println("AT+CMGS=\"09137392795\"");
+    gsm.println("AT+CMGS=\"YOUR NUMBER\"");
     delay(200);
     gsm.println(txt2);
     delay(200);
@@ -164,14 +164,4 @@ void loop() {
   
   
   
-  
-  
-  /*
-  txtSmsR = Sim800l.readSms(1);
-  numberSms = Sim800l.getNumberSms(1);
-  Serial.println(numberSms);
-  Serial.println(txtSmsR);
-  Serial.println("---------------");
-  error = Sim800l.delAllSms();
-  */
 }
